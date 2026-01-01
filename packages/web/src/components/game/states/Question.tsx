@@ -19,7 +19,7 @@ const Question = ({ data: { question, image, cooldown } }: Props) => {
   return (
     <section className="relative mx-auto flex h-full w-full max-w-7xl flex-1 flex-col items-center px-4">
       <div className="flex flex-1 flex-col items-center justify-center gap-5">
-        <h2 className="anim-show text-center text-3xl font-bold text-white drop-shadow-lg md:text-4xl lg:text-5xl">
+        <h2 className="anim-show text-center text-3xl font-bold text-[#082F4F] md:text-4xl lg:text-5xl">
           {question}
         </h2>
 

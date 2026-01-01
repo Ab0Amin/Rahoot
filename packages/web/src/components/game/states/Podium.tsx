@@ -100,7 +100,7 @@ const Podium = ({ data: { subject, top } }: Props) => {
         </div>
       )}
       <section className="relative mx-auto flex w-full max-w-7xl flex-1 flex-col items-center justify-between">
-        <h2 className="anim-show text-center text-3xl font-bold text-white drop-shadow-lg md:text-4xl lg:text-5xl">
+        <h2 className="anim-show text-center text-3xl font-bold text-[#082F4F] md:text-4xl lg:text-5xl">
           {subject}
         </h2>
 
@@ -117,7 +117,7 @@ const Podium = ({ data: { subject, top } }: Props) => {
             >
               <p
                 className={clsx(
-                  "overflow-visible text-center text-2xl font-bold whitespace-nowrap text-white drop-shadow-lg md:text-4xl",
+                  "overflow-visible text-center text-2xl font-bold whitespace-nowrap text-[#082F4F] md:text-4xl",
                   {
                     "anim-balanced": apparition >= 4,
                   },
@@ -149,7 +149,7 @@ const Podium = ({ data: { subject, top } }: Props) => {
           >
             <p
               className={clsx(
-                "overflow-visible text-center text-2xl font-bold whitespace-nowrap text-white opacity-0 drop-shadow-lg md:text-4xl",
+                "overflow-visible text-center text-2xl font-bold whitespace-nowrap text-[#082F4F] opacity-0 md:text-4xl",
                 { "anim-balanced opacity-100": apparition >= 4 },
               )}
             >
@@ -176,7 +176,7 @@ const Podium = ({ data: { subject, top } }: Props) => {
             >
               <p
                 className={clsx(
-                  "overflow-visible text-center text-2xl font-bold whitespace-nowrap text-white drop-shadow-lg md:text-4xl",
+                  "overflow-visible text-center text-2xl font-bold whitespace-nowrap text-[#082F4F] md:text-4xl",
                   {
                     "anim-balanced": apparition >= 4,
                   },

@@ -73,7 +73,7 @@ const Answers = ({
   return (
     <div className="flex h-full flex-1 flex-col justify-between">
       <div className="mx-auto inline-flex h-full w-full max-w-7xl flex-1 flex-col items-center justify-center gap-5">
-        <h2 className="text-center text-2xl font-bold text-white drop-shadow-lg md:text-4xl lg:text-5xl">
+        <h2 className="text-center text-2xl font-bold text-[#082F4F] md:text-4xl lg:text-5xl">
           {question}
         </h2>
 
@@ -87,12 +87,12 @@ const Answers = ({
       </div>
 
       <div>
-        <div className="mx-auto mb-4 flex w-full max-w-7xl justify-between gap-1 px-2 text-lg font-bold text-white md:text-xl">
-          <div className="flex flex-col items-center rounded-full bg-black/40 px-4 text-lg font-bold">
+        <div className="mx-auto mb-4 flex w-full max-w-7xl justify-between gap-1 px-2 text-lg font-bold text-[#082F4F] md:text-xl">
+          <div className="flex flex-col items-center rounded-full bg-[#2473B9]/20 px-4 text-lg font-bold">
             <span className="translate-y-1 text-sm">Time</span>
             <span>{cooldown}</span>
           </div>
-          <div className="flex flex-col items-center rounded-full bg-black/40 px-4 text-lg font-bold">
+          <div className="flex flex-col items-center rounded-full bg-[#2473B9]/20 px-4 text-lg font-bold">
             <span className="translate-y-1 text-sm">Answers</span>
             <span>
               {totalAnswer}/{totalPlayer}
@@ -100,7 +100,7 @@ const Answers = ({
           </div>
         </div>
 
-        <div className="mx-auto mb-4 grid w-full max-w-7xl grid-cols-2 gap-1 rounded-full px-2 text-lg font-bold text-white md:text-xl">
+        <div className="mx-auto mb-4 grid w-full max-w-7xl grid-cols-2 gap-1 rounded-full px-2 text-lg font-bold md:text-xl">
           {answers.map((answer, key) => (
             <AnswerButton
               key={key}

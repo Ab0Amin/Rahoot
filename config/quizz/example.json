@@ -2,7 +2,7 @@
   "subject": "Example Quizz",
   "questions": [
     {
-      "question": "What is good answer ?",
+      "question": "What is good answer test  ?",
       "answers": ["No", "Good answer", "No", "No"],
       "solution": 1,
       "cooldown": 5,

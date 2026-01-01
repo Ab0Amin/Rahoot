@@ -1,0 +1,19 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <clipPath id="clip0">
+      <rect x="0" y="0" width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#clip0)">
+    <!-- White background -->
+    <rect width="1920" height="1080" fill="#FFFFFF"/>
+    
+    <!-- Geometric shapes -->
+    <path d="M1365 273 772 926C756 945 730 956 704 956L-3 956 575 319C602 290 640 273 680 273L1365 273Z" 
+          stroke="#2473B9" stroke-width="2" stroke-opacity="0.49" fill="none"/>
+    <path d="M739 -55 382 338C372 349 358 355 342 355L-84 355 264 -27C280 -45 303 -55 327 -55L739 -55Z" 
+          stroke="#2473B9" stroke-width="2" stroke-opacity="0.49" fill="none"/>
+    <path d="M1843 867 1250 1520C1232 1540 1208 1551 1182 1551L475 1551 1052 914C1079 885 1117 867 1157 867L1843 867" 
+          stroke="#2473B9" stroke-width="2" stroke-opacity="0.49" fill="none"/>
+  </g>
+</svg>

@@ -11,7 +11,7 @@ const montserrat = Montserrat({
 })
 
 export const metadata: Metadata = {
-  title: "Rahoot !",
+  title: "كفاءات KBS",
   icons: "/icon.svg",
 }
 

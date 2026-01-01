@@ -50,12 +50,12 @@ const Room = ({ data: { text, inviteCode } }: Props) => {
         {inviteCode}
       </div>
 
-      <h2 className="mb-4 text-4xl font-bold text-white drop-shadow-lg">
+      <h2 className="mb-4 text-4xl font-bold text-[#082F4F]">
         {text}
       </h2>
 
-      <div className="mb-6 flex items-center justify-center rounded-full bg-black/40 px-6 py-3">
-        <span className="text-2xl font-bold text-white drop-shadow-md">
+      <div className="mb-6 flex items-center justify-center rounded-full bg-[#2473B9]/20 px-6 py-3">
+        <span className="text-2xl font-bold text-[#082F4F]">
           Players Joined: {totalPlayers}
         </span>
       </div>

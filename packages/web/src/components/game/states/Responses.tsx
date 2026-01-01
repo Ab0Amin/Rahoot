@@ -57,7 +57,7 @@ const Responses = ({
   return (
     <div className="flex h-full flex-1 flex-col justify-between">
       <div className="mx-auto inline-flex h-full w-full max-w-7xl flex-1 flex-col items-center justify-center gap-5">
-        <h2 className="text-center text-2xl font-bold text-white drop-shadow-lg md:text-4xl lg:text-5xl">
+        <h2 className="text-center text-2xl font-bold text-[#082F4F] md:text-4xl lg:text-5xl">
           {question}
         </h2>
 
@@ -83,7 +83,7 @@ const Responses = ({
       </div>
 
       <div>
-        <div className="mx-auto mb-4 grid w-full max-w-7xl grid-cols-2 gap-1 rounded-full px-2 text-lg font-bold text-white md:text-xl">
+        <div className="mx-auto mb-4 grid w-full max-w-7xl grid-cols-2 gap-1 rounded-full px-2 text-lg font-bold md:text-xl">
           {answers.map((answer, key) => (
             <AnswerButton
               key={key}

@@ -34,14 +34,14 @@ const Result = ({
       ) : (
         <CricleXmark className="aspect-square max-h-60 w-full" />
       )}
-      <h2 className="mt-1 text-4xl font-bold text-white drop-shadow-lg">
+      <h2 className="mt-1 text-4xl font-bold text-[#082F4F]">
         {message}
       </h2>
-      <p className="mt-1 text-xl font-bold text-white drop-shadow-lg">
+      <p className="mt-1 text-xl font-bold text-[#082F4F]">
         {`You are top ${rank}${aheadOfMe ? `, behind ${aheadOfMe}` : ""}`}
       </p>
       {correct && (
-        <span className="mt-2 rounded bg-black/40 px-4 py-2 text-2xl font-bold text-white drop-shadow-lg">
+        <span className="mt-2 rounded bg-[#2473B9]/20 px-4 py-2 text-2xl font-bold text-[#082F4F]">
           +{points}
         </span>
       )}
