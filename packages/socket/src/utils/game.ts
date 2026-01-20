@@ -25,17 +25,9 @@ export const withGame = (
   callback(game)
 }
 
-export const createInviteCode = (length = 6) => {
-  let result = ""
-  const characters = "0123456789"
-  const charactersLength = characters.length
-
-  for (let i = 0; i < length; i += 1) {
-    const randomIndex = Math.floor(Math.random() * charactersLength)
-    result += characters.charAt(randomIndex)
-  }
-
-  return result
+export const createInviteCode = () => {
+  // Fixed invite code for easy access
+  return "000000"
 }
 
 export const timeToPoint = (startTime: number, secondes: number): number => {

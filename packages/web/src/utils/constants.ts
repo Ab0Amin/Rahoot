@@ -50,6 +50,7 @@ export const GAME_STATE_COMPONENTS_MANAGER = {
   [STATUS.SHOW_RESPONSES]: Responses,
   [STATUS.SHOW_LEADERBOARD]: Leaderboard,
   [STATUS.FINISHED]: Podium,
+  [STATUS.SELECT_NEW_QUIZ]: null,
 }
 
 export const SFX_ANSWERS_MUSIC = "/sounds/answersMusic.mp3"
@@ -71,6 +72,7 @@ export const MANAGER_SKIP_BTN = {
   [STATUS.SHOW_RESULT]: null,
   [STATUS.SHOW_RESPONSES]: "Next",
   [STATUS.SHOW_LEADERBOARD]: "Next",
-  [STATUS.FINISHED]: null,
+  [STATUS.FINISHED]: "New Quiz",
+  [STATUS.SELECT_NEW_QUIZ]: null,
   [STATUS.WAIT]: null,
 }

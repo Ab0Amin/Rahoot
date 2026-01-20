@@ -10,6 +10,7 @@ export const STATUS = {
   SHOW_RESPONSES: "SHOW_RESPONSES",
   SHOW_LEADERBOARD: "SHOW_LEADERBOARD",
   FINISHED: "FINISHED",
+  SELECT_NEW_QUIZ: "SELECT_NEW_QUIZ",
   WAIT: "WAIT",
 } as const
 
@@ -48,6 +49,7 @@ type ManagerExtraStatus = {
     image?: string
   }
   SHOW_LEADERBOARD: { oldLeaderboard: Player[]; leaderboard: Player[] }
+  SELECT_NEW_QUIZ: { quizzes: { id: string; subject: string }[] }
 }
 
 export type PlayerStatusDataMap = CommonStatusDataMap

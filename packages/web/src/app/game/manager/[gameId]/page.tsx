@@ -9,6 +9,7 @@ import Prepared from "@rahoot/web/components/game/states/Prepared"
 import Question from "@rahoot/web/components/game/states/Question"
 import Responses from "@rahoot/web/components/game/states/Responses"
 import Room from "@rahoot/web/components/game/states/Room"
+import SelectNewQuiz from "@rahoot/web/components/game/states/SelectNewQuiz"
 import Start from "@rahoot/web/components/game/states/Start"
 import { useEvent, useSocket } from "@rahoot/web/contexts/socketProvider"
 import { useManagerStore } from "@rahoot/web/stores/manager"
@@ -54,6 +55,12 @@ const ManagerGame = () => {
     toast.error(message)
   })
 
+  useEvent("manager:newQuizSelected", ({ quizzSubject, players }) => {
+    setPlayers(players)
+    setQuestionStates(null)
+    toast.success(`New quiz selected: ${quizzSubject}`)
+  })
+
   const handleSkip = () => {
     if (!gameId) {
       return
@@ -77,6 +84,11 @@ const ManagerGame = () => {
 
       case STATUS.SHOW_LEADERBOARD:
         socket?.emit("manager:nextQuestion", { gameId })
+
+        break
+
+      case STATUS.FINISHED:
+        socket?.emit("manager:requestNewQuiz", { gameId })
 
         break
     }
@@ -122,6 +134,11 @@ const ManagerGame = () => {
 
     case STATUS.FINISHED:
       component = <Podium data={status.data} />
+
+      break
+
+    case STATUS.SELECT_NEW_QUIZ:
+      component = <SelectNewQuiz data={status.data} />
 
       break
   }

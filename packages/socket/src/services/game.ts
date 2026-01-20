@@ -525,6 +525,67 @@ class Game {
 
     this.tempOldLeaderboard = null
   }
+
+  requestNewQuiz(socket: Socket, quizzes: { id: string; subject: string }[]) {
+    if (socket.id !== this.manager.id) {
+      return
+    }
+
+    if (this.started) {
+      return
+    }
+
+    this.sendStatus(this.manager.id, STATUS.SELECT_NEW_QUIZ, {
+      quizzes,
+    })
+  }
+
+  selectNewQuiz(socket: Socket, quizz: any) {
+    if (socket.id !== this.manager.id) {
+      return
+    }
+
+    if (this.started) {
+      return
+    }
+
+    // Reset game state for new quiz
+    this.quizz = quizz
+    this.round = {
+      playersAnswers: [],
+      currentQuestion: 0,
+      startTime: 0,
+    }
+    this.leaderboard = []
+    this.tempOldLeaderboard = null
+    this.lastBroadcastStatus = null
+    this.managerStatus = null
+    this.playerStatus.clear()
+
+    // Reset player points
+    this.players.forEach((player) => {
+      player.points = 0
+    })
+
+    // Send SHOW_ROOM status to manager and WAIT to players
+    this.sendStatus(this.manager.id, STATUS.SHOW_ROOM, {
+      text: "Waiting for players",
+      inviteCode: this.inviteCode,
+    })
+
+    this.players.forEach((player) => {
+      this.sendStatus(player.id, STATUS.WAIT, {
+        text: `New quiz: ${quizz.subject}. Waiting to start...`,
+      })
+    })
+
+    this.io.to(this.manager.id).emit("manager:newQuizSelected", {
+      quizzSubject: quizz.subject,
+      players: this.players,
+    })
+
+    console.log(`Game ${this.inviteCode} switched to quiz: ${quizz.subject}`)
+  }
 }
 
 export default Game

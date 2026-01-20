@@ -61,6 +61,10 @@ export interface ServerToClientEvents {
   "manager:removePlayer": (_playerId: string) => void
   "manager:errorMessage": (_message: string) => void
   "manager:playerKicked": (_playerId: string) => void
+  "manager:newQuizSelected": (_data: {
+    quizzSubject: string
+    players: Player[]
+  }) => void
 }
 
 export interface ClientToServerEvents {
@@ -73,6 +77,8 @@ export interface ClientToServerEvents {
   "manager:abortQuiz": (_message: MessageGameId) => void
   "manager:nextQuestion": (_message: MessageGameId) => void
   "manager:showLeaderboard": (_message: MessageGameId) => void
+  "manager:requestNewQuiz": (_message: MessageGameId) => void
+  "manager:selectNewQuiz": (_message: { gameId: string; quizzId: string }) => void
 
   // Player actions
   "player:join": (_inviteCode: string) => void

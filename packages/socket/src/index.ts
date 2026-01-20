@@ -130,6 +130,27 @@ io.on("connection", (socket) => {
     withGame(gameId, socket, (game) => game.showLeaderboard())
   )
 
+  socket.on("manager:requestNewQuiz", ({ gameId }) =>
+    withGame(gameId, socket, (game) => {
+      const quizzes = Config.quizz().map((q) => ({ id: q.id, subject: q.subject }))
+      game.requestNewQuiz(socket, quizzes)
+    })
+  )
+
+  socket.on("manager:selectNewQuiz", ({ gameId, quizzId }) =>
+    withGame(gameId, socket, (game) => {
+      const quizzList = Config.quizz()
+      const quizz = quizzList.find((q) => q.id === quizzId)
+
+      if (!quizz) {
+        socket.emit("game:errorMessage", "Quizz not found")
+        return
+      }
+
+      game.selectNewQuiz(socket, quizz)
+    })
+  )
+
   socket.on("disconnect", () => {
     console.log(`A user disconnected : ${socket.id}`)
 
