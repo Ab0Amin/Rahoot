@@ -9,7 +9,16 @@ import { Server as ServerIO } from "socket.io"
 
 const io: Server = new ServerIO({
   cors: {
-    origin: [env.WEB_ORIGIN],
+    origin: (origin, callback) => {
+      // Allow localhost on any port for development
+      if (!origin || origin.match(/^http:\/\/localhost(:\d+)?$/)) {
+        callback(null, true)
+      } else if (origin === env.WEB_ORIGIN) {
+        callback(null, true)
+      } else {
+        callback(new Error("Not allowed by CORS"))
+      }
+    },
   },
 })
 Config.init()
