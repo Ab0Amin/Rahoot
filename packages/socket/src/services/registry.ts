@@ -37,6 +37,15 @@ class Registry {
     return this.games.find((g) => g.inviteCode === inviteCode)
   }
 
+  removeGameByInviteCode(inviteCode: string): boolean {
+    const game = this.games.find((g) => g.inviteCode === inviteCode)
+    if (game) {
+      console.log(`Removing old game with invite code ${inviteCode}`)
+      return this.removeGame(game.gameId)
+    }
+    return false
+  }
+
   getPlayerGame(gameId: string, clientId: string): Game | undefined {
     return this.games.find(
       (g) =>

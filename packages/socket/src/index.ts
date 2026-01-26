@@ -85,6 +85,15 @@ io.on("connection", (socket) => {
       return
     }
 
+    // Remove any old game with the same invite code (000000)
+    // This ensures only one game exists with the fixed code
+    const oldGame = registry.getGameByInviteCode("000000")
+    if (oldGame) {
+      // Notify players in old game that it's being closed
+      io.to(oldGame.gameId).emit("game:reset", "New game started")
+      registry.removeGame(oldGame.gameId)
+    }
+
     const game = new Game(io, socket, quizz)
     registry.addGame(game)
   })
