@@ -1,0 +1,31 @@
+{
+  "subject": "Quiz 1 - المسابقة 1",
+  "questions": [
+    {
+      "question": "ما هي نسبة الأداء الإجمالي لعام 2025 كما ظهرت في الشرائح؟ \n \n What was the overall 2025 performance shown in the slides?",
+      "answers": ["72% ", "5%", "2%", "7%"],
+      "solution": 0,
+      "cooldown": 5,
+      "time": 20
+    },
+    {
+      "question": "أي مبادرة تربط الاستراتيجية بالثقافة؟ \n \n Which initiative connects Strategy with Culture?",
+      "answers": [
+        "4.2 إعادة تصميم تجربة الموظف الداخلية في كفاءات   \n Revamp Kafa'at’s internal employee value proposition",
+        "1.1 توسيع عروض استقطاب المواهب للتركيز على الخدمات عالية القيمة \n Broaden Talent Sourcing offering to focus on high value services",
+        "1.2 تطوير خدمات التعهيد الخارجي للموارد البشرية \n Develop HR BPO offering",
+        "1.3 تأسيس خدمات دعم الأعمال والأفراد \n Establish Business and People Support offering"
+      ],
+      "solution": 0,
+      "cooldown": 5,
+      "time": 25
+    },
+    {
+      "question": "من هو مالك المبادرة 4.2؟ \n \n Who is the Owner of initiative 4.2?",
+      "answers": ["ناصر السماري \n Nasser Alsmari ", "أحمد السويلم \n  Ahmed Alsuailm", "يزيد المسلم \n  Yazeed Almusalam", "عمر قطّان \n Omar Kattan"],
+      "solution": 0,
+      "cooldown": 5,
+      "time": 20
+    }
+  ]
+}

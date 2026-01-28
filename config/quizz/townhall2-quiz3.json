@@ -1,0 +1,26 @@
+{
+  "subject": "Quiz 3 - المسابقة 3",
+  "questions": [
+    {
+      "question": "أي اسم مبادرة يُستخدم لقنوات الاستماع والتواصل؟ \n \n Which initiative name is used for listening & communication channels?",
+      "answers": ["سردية المجموعة الواحدة \n One Group Narrative", "مساحة التواصل \n Connect Space", "برنامج رفاه الموظفين \n Employee Well-Being Program", "أفكار تتحول إلى أفعال \n Ideas in Action"],
+      "solution": 1,
+      "cooldown": 5,
+      "time": 20
+    },
+    {
+      "question": "أي مبادرة تتعلق بتقدير وتحفيز الموظفين؟ \n \n Which initiative is about recognizing employees?",
+      "answers": ["برنامج «موظف الشهر» \n Employee of the month", "قيادة حوارات «ليش؟» \n Lead the Why Conversations", "الهيكل التنظيمي الجديد \n New Org Structure", "وقفة القرار الشامل \n Inclusive Decision Pause"],
+      "solution": 0,
+      "cooldown": 5,
+      "time": 20
+    },
+    {
+      "question": "أي مبادرة تهدف إلى تبسيط الإجراءات لزيادة السرعة والمرونة؟ \n \n Which initiative is about simplifying processes for speed and agility?",
+      "answers": ["هندسة الإجراءات - الهيكل التنظيمي الجديد \n Process Simplification - New Org Structure", "برنامج «موظف الشهر» \n Employee of the month", "دوائر الشمول \n Inclusion Circles", "مساحة التواصل \n Connect Space"],
+      "solution": 0,
+      "cooldown": 5,
+      "time": 25
+    }
+  ]
+}

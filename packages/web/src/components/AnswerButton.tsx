@@ -20,7 +20,7 @@ const AnswerButton = ({
     {...otherProps}
   >
     <Icon className="h-6 w-6" />
-    <span className="drop-shadow-md">{children}</span>
+    <span className="whitespace-pre-line drop-shadow-md">{children}</span>
   </button>
 )
 

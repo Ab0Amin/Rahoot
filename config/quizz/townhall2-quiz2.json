@@ -1,0 +1,26 @@
+{
+  "subject": "Quiz 2 - المسابقة 2",
+  "questions": [
+    {
+      "question": "بحسب الشريحة، كيف يمكن وصف الثقافة بشكل أفضل؟ \n \n According to the slide, culture is best described as:",
+      "answers": ["الطعام واللبس \n Food and clothing", "السياسات المكتوبة فقط \n Written policies only", "القواعد غير المكتوبة التي نتفق عليها \n Unwritten rules we agree on", "الجنسية \n Nationality"],
+      "solution": 2,
+      "cooldown": 5,
+      "time": 20
+    },
+    {
+      "question": "تنص الشريحة على: «الاستراتيجية تحدد الاتجاه، والثقافة تحدد ____» \n \n Strategy defines direction, Culture determines ____",
+      "answers": ["الربح \n Profit", "التنفيذ \n Execution", "الميزانية \n Budget", "التوظيف \n Hiring"],
+      "solution": 1,
+      "cooldown": 5,
+      "time": 20
+    },
+    {
+      "question": "ما المثال المذكور في الشريحة على الثقافة داخل كفاءات؟ \n \n Which is listed as an example of culture in KBS?",
+      "answers": ["التعاون العالي \n High collaboration", "مكاتب خاصة للجميع \n Private offices for all", "عدم الابتكار \n No innovation", "العمل بشكل فردي فقط \n Working only individually"],
+      "solution": 0,
+      "cooldown": 5,
+      "time": 20
+    }
+  ]
+}

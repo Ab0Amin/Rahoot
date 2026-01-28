@@ -1,0 +1,26 @@
+{
+  "subject": "Quiz 4 - المسابقة 4",
+  "questions": [
+    {
+      "question": "بعد تحسين الثقافة، ما الذي يُفترض أن يشعر به الموظفون أكثر؟ \n \n After we improve culture, what should employees feel more?",
+      "answers": ["مزيد من اللوم والخوف \n More blame and fear", "مزيد من الوضوح وروح الفريق \n More clarity and teamwork", "مزيد من الارتباك \n More confusion", "مزيد من العزلة \n More isolation"],
+      "solution": 1,
+      "cooldown": 5,
+      "time": 20
+    },
+    {
+      "question": "الثقافة القوية تؤدي عادةً إلى: \n \n A strong culture usually leads to:",
+      "answers": ["تنفيذ أسرع وتقليل سوء الفهم \n Faster execution and fewer misunderstandings", "اجتماعات أكثر بلا قرارات \n More meetings with no decisions", "عمل أكثر داخل جزر منعزلة \n More silo work", "ملكية أقل \n Less ownership"],
+      "solution": 0,
+      "cooldown": 5,
+      "time": 20
+    },
+    {
+      "question": "ما أفضل علامة تدل أن تغيير الثقافة فعلاً يعمل؟ \n \n What is the best sign that culture change is working?",
+      "answers": ["الناس يتحدثون عن القيم فقط \n People only talk about values", "الملصقات أصبحت أجمل \n Posters look nice", "تغيّر السلوك: ملكية، احترام، تعاون \n Behaviors change: ownership, respect, collaboration", "سياسات أكثر فقط \n More policies only"],
+      "solution": 2,
+      "cooldown": 5,
+      "time": 20
+    }
+  ]
+}
